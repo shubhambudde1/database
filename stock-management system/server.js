@@ -1,22 +1,30 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 
 const app = express();
 const port = 3000;
 
 // MySQL Connection
-const db = mysql.createConnection({
+// create a new MySQL connection
+const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'password',
-  database: 'stock_management'
+  password: 'Latur@1059$',
+  database: 'world'
+});
+// connect to the MySQL database
+connection.connect((error) => {
+  if (error) {
+    console.error('Error connecting to MySQL database:', error);
+  } else {
+    console.log('Connected to MySQL database!');
+    
+  }
 });
 
-db.connect((err) => {
-  if (err) throw err;
-  console.log('Connected to MySQL');
-});
+// close the MySQL connection
+connection.end();
 
 // Body Parser Middleware
 app.use(bodyParser.json());
