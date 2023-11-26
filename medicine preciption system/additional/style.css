@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  .prescription-wrapper {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .patient-details,
+  .prescription-information,
+  .doctor-information {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  select {
+    width: 200px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
