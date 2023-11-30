@@ -10,41 +10,48 @@
 <body>
     <!-- nav bar -->
     
-
     <!-- main section -->
     <section>
-        <h1>Health Form</h1>
-  <form id="healthForm">
+        <h1>Form</h1>
+        <form id="healthForm" action="/submitForm" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
 
     <label for="age">Age:</label>
     <input type="number" id="age" name="age" required>
 
+    
     <div class="form-group">
         <label for="dateSigned">Date Signed:</label>
         <input type="date" id="dateSigned" name="dateSigned" required>
-        </div>
+    </div>
 
     <label for="disease">Disease:</label>
-    <select id="disease" name="disease" required>
-      <option value="---">Select an option</option>
-      <option value="cold">Cold</option>
-      <option value="fever">Fever</option>
-      <option value="cough">Cough</option>
-    </select>
+<select id="disease" name="disease" required>
+    <option value="flu">Flu</option>
+    <option value="cold">Cold</option>
+    <option value="diabetes">Diabetes</option>
+    <!-- Add more options as needed -->
+</select>
 
-    <label for="medicine">Medicine:</label>
-    <select id="medicine" name="medicine" required>
-      <option value="paracetamol">Paracetamol</option>
-      <option value="ibuprofen">Ibuprofen</option>
-      <option value="cough_syrup">Cough Syrup</option>
-    </select>
+<label for="medicine">Medicine:</label>
+<select id="medicine" name="medicine" required>
+    <option value="aspirin">Aspirin</option>
+    <option value="ibuprofen">Ibuprofen</option>
+    <option value="acetaminophen">Acetaminophen</option>
+    <!-- Add more options as needed -->
+</select>
 
-    <button type="button" onclick="submitForm()">Submit</button>
-  </form>
-        
+    <button type="submit">Submit</button>
+</form>
+
     </section>
 
+    <!-- Include your script.js file -->
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
