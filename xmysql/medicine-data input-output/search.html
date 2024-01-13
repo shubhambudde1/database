@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search by Name</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Search by Name</h1>
+    <form action="/search" method="post">
+        <label for="searchName">Enter Name:</label>
+        <input type="text" name="searchName" required>
+        <input type="submit" value="Search">
+    </form>
+
+    <!-- Display search results here -->
+    <div id="searchResults"></div>
+</body>
+</html>

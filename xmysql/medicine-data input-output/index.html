@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Submit Information</h1>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label for="age">Age:</label>
+        <input type="text" name="age" required><br>
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" required><br>
+
+        <label for="disease">Disease:</label>
+        <input type="text" name="disease" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <button class="button">
+        <a href="/search.html">search</a>
+      </button>
+</body>
+</html>
