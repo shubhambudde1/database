@@ -8,6 +8,8 @@ const connection = mysql.createConnection({
   database: 'health'
 });
 
+
+
 // connect to the MySQL database
 connection.connect((error) => {
   if (error) {
